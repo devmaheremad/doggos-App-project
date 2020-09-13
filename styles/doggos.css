@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: #FF4136;
+    padding: 3.2rem 1.8rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+nav div {
+    flex-basis: 50%;
+}
+
+nav div:last-of-type {
+    text-align: right;
+}
+
+nav select {
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64%;
+    min-height: 80vh;
+    margin-bottom: 2rem;
+}
+
+.wrapper .dog-icon {
+    font-size: 3.5rem;
+    animation: spin 1s linear infinite;
+}
+
+.show {
+    display: block;
+}
+
+.wrapper #my-img {
+    width: 100%;
+    display: none;
+}
+
+@keyframes spin {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.show {
+    display: block;
+}
